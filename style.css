@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  /* background-color: rgb(31 41 55); */
+
+}
+#home-screen{
+  background-color: rgb(31 41 55);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imageSelector{
+  background-color: rgb(255, 254, 254);
+}
+
+
+/* From uiverse.io */
+button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 13px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all .3s;
+ }
+ 
+ button:active,
+ button:hover {
+  outline: 0;
+ }
+ 
+ button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+ }
+ 
+ button:hover span {
+  background: none;
+ }
+ 
+ button:active {
+  transform: scale(0.9);
+ }
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#canvasHolder {
+  width: 100%;
+  /* float: left; */
+  height: 600px;
+  clear: both;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  text-align: center;
+}
+#canvasHolder canvas {
+  margin: 0 auto;
+  /* float: left; */
+  height: 580px;
+  /* height: 480px; */
+  width: 380px;
+  /* left: 50%; */
+  /* position: relative; */
+  /* margin-left: -360px; */
+  border: 10px solid #000;
+  cursor: crosshair;
+}
+
+#imageSelector {
+  width: 380px;
+  /* float: left; */
+  /* position: relative; */
+  /* left: 50%; */
+  /* margin-left: -360px; */
+  margin: 0 auto;
+  margin-top: 20px;
+
+}
+#imageSelector img {
+  float: left;
+  width: 23%;
+  margin: 5px 1% 5px 1%;
+  height: 150px;
+}
+#imageSelector img:hover {
+  background: #f2f2f3;
+  cursor: pointer;
+}
+
+.controls {
+  /* float: left; */
+  /* position: relative; */
+  background-color: #fff;
+  /* clear: both; */
+  width: 380px;
+  /* left: 50%; */
+  padding: 2px;
+  /* margin-left: -360px; */
+  margin: 0 auto;
+
+}
+.controls div {
+  margin: 0px 10px 0px 10px;
+  float: left;
+}
+.controls div i {
+  color: #000;
+  float: left;
+  position: relative;
+  font-size: 20pt;
+}
+.controls div i:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.controls input[type=color] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 110%;
+  border: 0px;
+  padding: 0px;
+  padding-top: 25px;
+  outline: 0px;
+  background: rgba(0, 0, 0, 0);
+  margin: 0px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  left: 0;
+}
+.controls input[type=range] {
+  -webkit-appearance: none;
+  border: 2px solid 0;
+  border-radius: 20px;
+  margin-top: 12px;
+  width: 100px;
+  height: 10px;
+  background: #333;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.controls input[type=range]::-webkit-slider-runnable-track {
+  height: 0px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+.controls input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #555;
+  margin-top: -15px;
+}
+.controls input[type=range]:focus {
+  outline: none;
+}
